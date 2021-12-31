@@ -44,3 +44,22 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## To Run
+
+## Development environment
+docker run -it --rm \                               
+-v ${PWD}:/app \
+-v /app/node_modules \
+-p 3001:3000 \
+-e CHOKIDAR_USEPOLLING=true \
+sigma-frontend:dev
+
+
+docker-compose up -d --build
+
+## Prod build
+docker build -f Dockerfile.prod -t sigma-frontend:prod .
+
+## Prod run
+docker run -it --rm -p 8787:80 sigma-frontend:prod
