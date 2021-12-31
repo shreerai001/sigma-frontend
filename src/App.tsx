@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Sigma news google cloud run
+          Sigma news google cloud run, react ts
         </p>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
